@@ -1,13 +1,6 @@
 {
-    "compilerOptions": {
-      "outDir": "./dist/",
-      "sourceMap": true,
-      "noImplicitAny": true,
-      "module": "es6",
-      "target": "es6",
-      "allowJs": true,
-      "moduleResolution": "node",
-    },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "**/*.spec.ts",  "**/*.d.ts"]
+  "extends": "tsconfigs/browser-executable", // Module to give browser dom types
+  "compilerOptions": {
+    "strictFunctionTypes": false
   }
+}
